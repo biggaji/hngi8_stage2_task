@@ -4,6 +4,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const path = require("path");
+const indexRouter = require("./src/routers/index");
 
 const app = express();
 app.use(express.urlencoded({extended:false}));
@@ -13,10 +14,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.engine("hbs", exphbs({defaultLayout: "main", extname:"hbs"}));
 app.set("view engine", "hbs");
 
-app.get('/', (req,res) => {
-    res.render("index");
-})
-
+app.use('/', indexRouter);
 
 let PORT = process.env.PORT || 4000;
 
