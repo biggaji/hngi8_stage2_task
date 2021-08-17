@@ -24,6 +24,25 @@ body {
   unicode-range: U+0000-007e;
 }
 
+footer {
+  margin: 1rem 0;
+}
+
+footer p {
+  line-height: 1.4;
+  font-weight: 300;
+  letter-spacing: 0.01rem;
+  font-size: 0.9rem;
+}
+
+footer p img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
 .resume-title {
   width: 100%;
   margin: 0.6rem 0;
@@ -214,7 +233,6 @@ body {
 
 .contact-form-container {
   display: none;
-  border: 1px solid red;
   width: 90%;
   padding: 20px;
   -webkit-box-shadow: 0 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
