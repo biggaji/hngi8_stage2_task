@@ -1,4 +1,19 @@
 // mobile first design
+footer {
+    p {
+        line-height: 1.4;
+        font-weight: 300;
+        letter-spacing: 0.01rem;
+        font-size: 0.9rem;
+        img {
+            object-fit: contain;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+    }
+    margin: 1rem 0;
+}
 
 @media screen and (min-width: 280px) {
     
