@@ -1,4 +1,225 @@
 // mobile first design
+.avatar {
+    width: 100%;
+    height: 200px;
+    border-radius: 100%;
+    text-align: center;
+    img {
+        border-radius: 100%;
+        height: auto;
+        object-fit: contain;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.basic-info-container {
+    margin: 0 0 1rem 0;
+    .basic-info-identity {
+        margin: 0 0 1rem 0;
+        .fullname {
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.4;
+            letter-spacing: 0.02rem;
+        }
+        .job-role {
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.4;
+            letter-spacing: 0.02rem;
+        }
+    }
+    .basic-info-desc {
+        margin: 0 0 1rem 0;
+        p {
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.4;
+            letter-spacing: 0.02rem;
+        }
+    }
+    .basic-info-contact {
+        width: 100%;
+        .contact-list {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            margin: 0.4rem 0;
+            .icon {
+                margin-right: 0.4rem;
+                vertical-align: middle;
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .details {
+                font-size: 0.9rem;
+                font-weight: 300;
+                line-height: 1.4;
+                letter-spacing: 0.02rem;
+            }
+        }
+        .cta {
+            width: 100%;
+            margin:1rem 0 0.5rem 0;
+            #form-opener {
+                width: 100%;
+                padding: 0.3rem 0;
+            }
+        }
+    }
+}
+
+.h2 {
+    text-align: left;
+    line-height: 1.4;
+    letter-spacing: 0.02rem;
+    margin: 0.5rem 0;
+}
+
+.skills-container {
+    width: 100%;
+    margin: 0.5rem 0;
+    .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        img {
+            object-fit: contain;
+            width: 50px;
+            height: 50px;
+            margin-right: 0.5rem;
+            margin-top: 0.4rem;
+        }
+    }
+}
+
+.work-exp-container {
+    text-align: left;
+    .no-work-empty {
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: 0.02rem;
+    }
+}
+
+.orgs {
+    .orgs-lists {
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: 0.02rem;
+    }
+    .role {
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: 0.02rem;
+    }
+    .period {
+        font-style: italic;
+    }
+}
+
+.edu {
+    .course {
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: 0.02rem;
+    }
+    .college-name {
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: 0.02rem;
+    }
+}
+
+.lang {
+    margin: 0 0 1rem 0;
+    .lang-list {
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.4;
+        letter-spacing: 0.02rem;
+    }
+}
+
+.contact-form-container {
+    display: none;
+    border: 1px solid red;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 0.7rem 0.1rem rgba(0,0,0,0.2);
+    position: fixed;
+    top:20%;
+    z-index: 1000;
+    // bottom: 0;
+    left: 13px;
+    right: 0;
+    background-color: #fff;
+
+    #close-form {
+        background-color: #fff;
+        border: none;
+        width: 24px;
+        height: 24px;
+        float: right;
+        display: block;
+        margin: 1rem 0;
+        img {
+            object-fit: contain;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+    }
+
+    #form-container {
+        width: 100%;
+        .wrap-cont {
+            margin: 0.5rem 0;
+            label {
+                font-size: 0.9rem;
+                font-weight: 300;
+                line-height: 1.4;
+                letter-spacing: 0.02rem;
+            }
+            .required {
+                color: red;
+                vertical-align: middle;
+            }
+            .input-wrap {
+                font-size: 0.9rem;
+                font-weight: 300;
+                line-height: 1.4;
+                letter-spacing: 0.02rem;
+                width: 100%;
+                input {
+                    width: 100%;
+                    padding: 0.3rem 0.2rem;
+                    margin: 0.1rem 0;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+        .btn-wrap {
+            width:100%;
+            button {
+                padding: 0.3rem 0;
+                width: 100%;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 280px) {
     
