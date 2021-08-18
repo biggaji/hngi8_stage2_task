@@ -240,6 +240,7 @@ footer p img {
   position: fixed;
   top: 20%;
   z-index: 1000;
+  border-radius: 1rem;
   left: 13px;
   right: 0;
   background-color: #fff;
