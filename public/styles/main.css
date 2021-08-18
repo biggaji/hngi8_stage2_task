@@ -29,10 +29,11 @@ footer {
 }
 
 footer p {
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 300;
   letter-spacing: 0.01rem;
   font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
 }
 
 footer p img {
@@ -234,7 +235,7 @@ footer p img {
 .contact-form-container {
   display: none;
   width: 90%;
-  padding: 20px;
+  padding: 40px 30px;
   -webkit-box-shadow: 0 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -309,5 +310,27 @@ footer p img {
 .contact-form-container #form-container .btn-wrap button {
   padding: 0.3rem 0;
   width: 100%;
+}
+
+@media screen and (min-width: 540px) {
+  .contact-form-container {
+    width: 66%;
+    left: 17%;
+    top: 5%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .contact-form-container {
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-form-container {
+    width: 40%;
+    left: 30%;
+    top: 20%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

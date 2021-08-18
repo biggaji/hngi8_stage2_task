@@ -154,7 +154,7 @@
 .contact-form-container {
     display: none;
     width: 90%;
-    padding: 20px;
+    padding: 40px 30px;
     box-shadow: 0 0 0.7rem 0.1rem rgba(0,0,0,0.2);
     position: fixed;
     top:20%;
@@ -231,16 +231,26 @@
 //tablets
 
 @media screen and (min-width: 540px) {
-    
+    .contact-form-container {
+        width: 66%;
+        left: 17%;
+        top: 5%;
+    }
 }
 @media screen and (min-width: 720px) {
-    
+    .contact-form-container {
+        top: 30%;
+    }
 }
 
 // laptops, desktops and large screens
 
 @media screen and (min-width: 1024px) {
-    
+    .contact-form-container {
+        width: 40%;
+        left: 30%;
+        top: 20%;
+    }
 }
 @media screen and (min-width: 1366px) {
     
