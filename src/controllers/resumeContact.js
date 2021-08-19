@@ -18,4 +18,9 @@ exports.processForm = async (req,res) => {
     } catch (error) {
         console.log(`Failed to process form`, error);
     }
+
+    res.json({
+        "message": "Your data has been received successfully",
+        "success" : true
+    });
 };
